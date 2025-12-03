@@ -1,0 +1,16 @@
+GET http://127.0.0.1:3000/tasks
+
+### Create sample task (x-www-form-urlencoded)
+POST http://127.0.0.1:3000/tasks
+Content-Type: application/x-www-form-urlencoded
+
+name=Sample task from Postcode
+
+### Create sample task JSON (optional)
+POST http://127.0.0.1:3000/tasks
+Content-Type: application/json
+
+{
+  "name": "Sample JSON task",
+  "status": ["ongoing"]
+}
